@@ -16,6 +16,12 @@ public class PageReplacementSimulator {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        int noFrames = 3;
+        String refrenceString1 = "1303563";
+        String refrenceString2  = "012301401234";
+        PageAllocator table1 = new FifoAllocator(noFrames , refrenceString2);
+        table1.allocate();
+        table1.printTable();
     }
     
 }
