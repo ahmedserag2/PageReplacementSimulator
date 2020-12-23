@@ -25,6 +25,19 @@ public class PageAllocator
         referenceLength = referenceString.length();
         allocationTable = new char[referenceLength][noOfFrames];
     }
+    //returns the index of the first index within bounds
+    public static int search(String str,int lower,int size,char key){
+        
+        int index = -1;
+       
+        for(int i = lower;i < size; i++){
+            if(str.charAt(i) == key){
+                index = i;
+                break;
+            }
+        }
+        return index;
+    }
     public static boolean match(char arr[],int size, char key)
     {
         for(char x : arr)
