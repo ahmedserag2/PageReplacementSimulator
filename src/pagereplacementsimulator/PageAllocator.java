@@ -17,6 +17,12 @@ public class PageAllocator
     protected int referenceLength;
     protected char allocationTable[][];
     
+    public static void DisplayMenu(){
+            // Display the menu
+            System.out.println("1 FIFO Algorithm");
+            System.out.println("2 LRU Algorithm");
+            System.out.println("3 Optimal Algorithm"); 
+    }
     
     public PageAllocator(int noOfFrames, String referenceString) {
         this.noOfFrames = noOfFrames;
