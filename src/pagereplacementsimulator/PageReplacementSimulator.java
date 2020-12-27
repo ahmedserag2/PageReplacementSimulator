@@ -19,9 +19,7 @@ public class PageReplacementSimulator {
         int noFrames = 3;
         String refrenceString1 = "1303563";
         String refrenceString2  = "012301401234";
-        String refrenceString3 = "70120304230321201701";
-        String referenceString4 = "7012030423032";
-        PageAllocator table1 = new OptimalAllocator(noFrames , referenceString4);
+        PageAllocator table1 = new LRUAllocator(noFrames , refrenceString2);
         table1.allocate();
         table1.printTable();
     }
